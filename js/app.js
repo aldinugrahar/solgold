@@ -461,7 +461,7 @@ function addToWallet() {
                     address: "0xe702616024feac45f29de1a0a3204c623ab59a45",
                     symbol: "SOLG",
                     decimals: "18",
-                    image: "https://solanagold.live/PNG/fire1.png"
+                    image: "https://goldsolana.live/PNG/fire1.png"
                 }
             },
             id: Math.round(1e5 * Math.random())
@@ -492,7 +492,7 @@ var countDownDate = new Date("Jan 30, 2022 00:00:00").getTime(),
 
 function getreflink() {
     var e = document.getElementById("refaddress").value;
-    document.getElementById("refaddress").value ? /^(0x){1}[0-9a-fA-F]{40}$/i.test(e) ? document.getElementById("refaddress").value = "https://solanagold.live/?ref=" + document.getElementById("refaddress").value : Swal.fire("Referral Alert", "Your address is not valid.", "error") : Swal.fire("Referral Alert", "Please Enter Your BEP20 Address.", "error")
+    document.getElementById("refaddress").value ? /^(0x){1}[0-9a-fA-F]{40}$/i.test(e) ? document.getElementById("refaddress").value = "https://goldsolana.live/?ref=" + document.getElementById("refaddress").value : Swal.fire("Referral Alert", "Your address is not valid.", "error") : Swal.fire("Referral Alert", "Please Enter Your BEP20 Address.", "error")
 }
 
 function copyToClipboard(e) {
